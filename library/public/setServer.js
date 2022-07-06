@@ -1,4 +1,3 @@
-console.log("running set server")
 try {
     let serverInfo = JSON.parse(""+MTScript.evalMacro(`[r: getInfo("server")]`))
     let isServer = serverInfo['personal server'] || serverInfo['hosting server']
@@ -34,7 +33,6 @@ try {
     MTScript.registerMacro("sendServer", sendServer)
 
     if (!isServer) {
-	console.log("Polling for server")
 	let link = "macro://GetServer@lib:com.lp-programming.maptool.jsFrame/none/Impersonated?" + playerName
 	MTScript.setVariable("link", link)
 	MTScript.evalMacro(`[r: execLink(link, "1", "not-self")]`)
