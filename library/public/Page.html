@@ -1,0 +1,14 @@
+<body>
+<script type="text/javascript" src="lib://com.lp-programming.maptool.jsFrame/fetchUserProperties.js?cachelib=false" >
+</script>
+
+Hello from <div id="name" style="display: inline"/>
+
+<script defer >
+UserData.then((ud)=>{
+	console.log("got user data")
+	document.getElementById("name").innerHTML = ud
+})
+</script>
+
+</body>

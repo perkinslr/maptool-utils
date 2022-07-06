@@ -1,0 +1,14 @@
+{
+  "name": "lib:lp-programming.utils",
+  "version": "0.0.1",
+  "website": "maptool.lp-programming.com",
+  "gitUrl": "https://github.com/perkinslr/maptool-utils",
+  "authors": ["Logan Perkins"],
+  "license": "ZLib",
+  "namespace": "com.lp-programming.maptool.utils",
+  "description": "Adds a set of useful JS UDFs to make writing frameworks easier",
+  "shortDescription": "Adds a set of useful JS UDFs to make writing frameworks easier",
+  "allowsUriAccess": true,
+  "licenseFile": "license.txt",
+  "readMeFile": "README"
+}
