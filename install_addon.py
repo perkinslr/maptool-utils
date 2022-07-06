@@ -38,7 +38,10 @@ with zipfile.ZipFile(source) as cmpgn:
     if 'libraries/libraries.json' in names:
         names.remove('libraries/libraries.json')
         context = json.loads(cmpgn.open('libraries/libraries.json').read().decode('utf-8'))
-        libraries = context['libraries']
+        if 'libraries' in context:
+            libraries = context['libraries']
+        else:
+            context['libraries'] = libraries = []
     else:
         libraries = []
         context = dict(libraries = libraries)
