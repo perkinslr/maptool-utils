@@ -32,4 +32,4 @@ UserData.then((ud) => {
 </script>
 ```
 You can see it in action via
-`[r: js.makeFrame5("exampleFrame", "lib://com.lp-programming.maptool.utils/Page.html", getUserName())]`
+`[r: js.makeFrame5("exampleFrame", "lib://com.lp-programming.maptool.utils/Page.html", getPlayerName())]`
